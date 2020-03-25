@@ -1,0 +1,36 @@
+{
+  "name": "play",
+  "version": "1.0.0",
+  "description": "Play",
+  "main": "index.tsx",
+  "repository": "git@github.com:dashbh/play.git",
+  "author": "Bhabani Prasad Dash <bhabani.dash@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --mode development",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^4.0.1",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

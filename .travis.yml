@@ -1,0 +1,27 @@
+os: linux
+language: node_js
+node_js:
+  - node
+  - "8.11"
+dist: trusty
+
+branches:
+  only:
+  - master
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - yarn build
+  - echo 'play.bpdash.com' > ./build/CNAME
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: ./build
+  token: $GITHUB_TOKEN
+
+notifications:
+  email: false
