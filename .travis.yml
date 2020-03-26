@@ -1,7 +1,7 @@
 os: linux
 language: node_js
 node_js:
-  - 8.11
+  - 8.12
 dist: trusty
 
 branches:
@@ -18,7 +18,7 @@ jobs:
     - stage: Lint
       script: yarn lint
     - stage: Test
-      script: echo one
+      script: yarn test
     - stage: Build
       script: yarn build
     - stage: Deploy
